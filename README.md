@@ -25,9 +25,7 @@ Then create file `config.json` and describe songs and server params there:
                 "name": "Songs of 80's",
                 "songs": [
                     {
-                        "name": "path/to/file", // actually this is path to file from files dir without file extension
-                                                // example: I have file "./files/mysongs/song.mp3", so i put there 
-                                                //          "mysong/song"
+                        "name": "path/to/song_file",
                         "score": 100,
                         "answer": "42",
                         "duration": 10.0
@@ -38,4 +36,10 @@ Then create file `config.json` and describe songs and server params there:
     }
 }
 ```
+
+A little bit about `path/to/song_file`:
+
+Actually, this is path to file from files dir without file extension
+
+Example: I have file `./files/mysongs/song.mp3`, so i put there `mysong/song`
 
